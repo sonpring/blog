@@ -10,7 +10,7 @@ description: A blog about technology and stuff related
 external-image: false
 picture: assets/images/profile.jpg
 
-# your site color theme, true for dark theme, 
+# your site color theme, true for dark theme,
 # false to light theme, auto to switch with system.
 dark-theme: auto
 
@@ -30,8 +30,8 @@ permalink: /:title/
 
 # if you don't want comments in your posts, leave categories empty
 disqus:
-  shortname: github # enter this from your disqus account
-  categories: [blog, project] # only show disqus for posts that have these categories
+    shortname: github # enter this from your disqus account
+    categories: [blog, project] # only show disqus for posts that have these categories
 
 # if you don't have any of social below, comment the line
 facebook: myfacebook
@@ -42,18 +42,12 @@ github: mygithub
 email: myemail@gmail.com
 
 authors:
-  johndoe:
-    name: John Doe
-    bio: A Man who travels the world eating noodles
-    external-image: false
-    picture: assets/images/profile.jpg
-    twitter: johndoe
-  jamesfoster:
-    name: James Foster
-    bio: A Man who develops software with coffee
-    external-image: false
-    picture: assets/images/james.jpg
-    twitter: jamesfoster
+    sonpring:
+        name: Sonpring
+        bio: Practice Makes Perfect.
+        external-image: false
+        picture: assets/images/profile.jpg
+        twitter: sonpring
 
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
@@ -87,31 +81,24 @@ animation: true
 
 # add default values to specific pages or layouts
 defaults:
-  - scope:
-      path: "" # an empty string here means all files in the project
-      layout: "post"
-    values:
-      # setting all post to not hidden by default,
-      # can be overridden in the front matter for a specific post
-      hidden: false
+    - scope:
+          path: "" # an empty string here means all files in the project
+          layout: "post"
+      values:
+          # setting all post to not hidden by default,
+          # can be overridden in the front matter for a specific post
+          hidden: false
 
 plugins:
-  - jekyll-seo-tag
-  - jekyll-gist
-  - jekyll-feed
-  - jemoji
+    - jekyll-seo-tag
+    - jekyll-gist
+    - jekyll-feed
+    - jemoji
 
 compress_html:
-  ignore:
-    envs:
-      - development
-      - stage
+    ignore:
+        envs:
+            - development
+            - stage
 
-exclude:
-  [
-    "README.md",
-    "Gemfile",
-    "Gemfile.lock",
-    "FAQ.md",
-    "vendor",
-  ]
+exclude: ["README.md", "Gemfile", "Gemfile.lock", "FAQ.md", "vendor"]
